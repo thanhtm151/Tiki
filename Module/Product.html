@@ -1,0 +1,24 @@
+<!--Sản phẩm-->
+<div class="row">
+    <div ng-repeat="sp in dsSanPham | filter: searchList" class="col-sm-2" style="margin-right: 30px; margin-top: 15px;">
+       
+        <div class="card pd" style="height: 420px; width: 182px;">
+            <a href="ChitietSP.html"><img src="{{sp.image}}" class="card-img-top" style="margin: 0 auto; height: 183px; width: 100%;"></a>
+                <div class="card-body">
+                <b class="card-title" style="margin: 10px 0; font-size: 12px;">{{sp.name}}</b>
+                <p class="card-text" style="color: grey; font-size: 12px; margin: 10px 0;">{{sp.start}} <i class="bi bi-star-fill text-warning"></i> | Đã bán {{sp.buy}}</p>
+                <p class="card-text text-danger" style="font-size: 16px; margin: 5px 0;"><b>{{sp.price | currency: "":"":"6.0"}} <u>đ</u></b></p>
+                <b class="text-primary" style="margin: 0; width: 6px; box-sizing: border-box; border: 1px solid; font-size: 10px; padding: 2px 4px;">{{sp.service1}}</b>
+                <b class="text-primary" style="margin: 0; width: 6px; box-sizing: border-box; border: 1px solid; font-size: 10px; padding: 2px 4px;">{{sp.service2}}</b>
+                <button ng-click="add(sp)" class="btn btn-primary" style="margin: 10px auto; width: 107px; height: 40px; border-radius: 0px;">Mua ngay</button>                                      
+                <hr style="margin: 5px auto;">
+                <div class="row">
+                    <div class="col-md-3"><img src="images/logo-now.png" width="37px"></div>
+                    <div class="col-md-9"><p style="color: grey; font-size: 14px;">Giao siêu tốc 2H</p></div>  
+                </div>                                                                                 
+            </div>
+        </div>
+
+    </div>                                
+</div>
+<!--/Sản phẩm-->

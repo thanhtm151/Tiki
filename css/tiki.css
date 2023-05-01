@@ -1,0 +1,286 @@
+.container {
+  padding: 0;
+  font-size: 14px;
+}
+header{
+  height: 100px;
+  background-color: white;
+}
+footer{
+  margin-top: 20px;
+  height: 500px;
+  background-color: white;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.menu-link:hover{
+  text-decoration: none;
+}
+hr {
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+#search{
+  margin-top: 10px; 
+}
+.menu-item{
+  margin-top: 10px;
+  font-size: 16px; 
+  padding-left: 70px;
+}
+.title{
+  padding: 10px 0 15px 10px ;
+  font-size: 16px;
+}
+.title-dmsp{
+  padding: 10px 0 5px 4px ;
+  font-size: 16px;
+}
+.item ul{
+  padding: 0px;
+}
+.dm-item{
+  font-size: 15px;
+  padding: 10px 10px;
+}
+.dmsp-item{
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.dm-link{
+  color: black;
+}
+.dm-link:hover {
+  color: black;
+}
+.dm-item:hover {
+  background-color: gainsboro;
+  border-radius: 10px;
+}
+.dmsp-check {
+  margin: 4px 0px 5px 8px;
+}
+.item ul li a:hover {
+  text-decoration: solid;
+}
+.carousel-inner img{
+  height: 260px;
+  width: 100%;
+  border-radius: 10px;
+}
+.banner-little img{
+  width: 97%;
+  height: 260px;
+  border-radius: 10px;
+}
+h6 {
+  margin: 15px 0;
+}
+.menu-footer ul{
+  font-size: 13px;
+  padding: 0;
+  color: grey;
+}
+.menu-footer ul li{
+  list-style: none;
+  padding: 3px 0;
+}
+.menu-footer ul li a{
+  color: grey;
+}
+.down-app {
+  padding: 0;
+}
+.down-app a img{
+  height: 35px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.pd:hover {
+  border: 2px solid	rgb(0, 191, 255);
+
+}
+.page-link { 
+  color: gray;
+}
+.page-link:hover{
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+}
+.bt-account{
+  width: 120px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  color: grey;
+  padding: 5px;
+}
+.bt-account:hover {
+  background-color: gainsboro;
+  border-radius: 10px;
+}
+.bt-home{
+  width: 120px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  color: 	rgb(0, 104, 255);
+  padding: 5px;
+}
+.bt-home:hover {
+  background-color: rgb(194, 220, 248);
+  border-radius: 10px;
+}
+.bt-cart {
+  margin-top: 3px;
+  width: 45px;
+  background-color: white;
+  border: none;
+  color: 	rgb(0, 104, 255);
+  padding: 5px;
+}
+.bt-cart:hover {
+  background-color: rgb(194, 220, 248);
+  border-radius: 10px;
+}
+.btn-contact {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 22px;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+}
+.required::after{
+  content:"*";
+  color: red;
+}
+/**Form login**/
+.fg-pass{
+  margin: 15px 25px;
+}
+#fg-link {
+  text-decoration: none; 
+  color: black;
+}
+#fg-link:hover{
+  color: rgb(0, 104, 255);
+  text-decoration: underline;
+}
+.footer-login{
+  margin-top: 100px;
+}
+.footer-login a {
+  text-decoration: none;
+}
+.social-items {
+  display: flex;
+  list-style: none;
+  padding-left: 150px;
+}
+.social-items li {
+  padding: 6px 10px;
+}
+.social-items li img {
+  width: 50px;
+}
+/**Form Chitiet**/
+.img-dt {
+  background-color: rgb(246 245 248);
+  width: 450px;
+  height: 600px;
+}
+.img-dt img {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.content-dt {
+  border-left: 1px solid gainsboro;
+}
+.content {
+  padding-left: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.img-card {
+  border-radius: 50%;
+  width: 25%;
+  margin: 10px;
+}
+.ct-content {
+  margin: 10px 0; 
+  padding: 0 10px;
+  text-align: justify;
+}
+.ct-content p {
+  color: grey;
+  font-size: 13px;
+}
+.ct-content p span {
+  float: right;
+  color: black;
+}
+.bt-card {
+  text-align: center;
+  margin: 10px 0;
+}
+.bt-shop {
+  padding: 5px;
+  font-size: 13px;
+}
+.cl-bt{
+  width: 120px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.cl-bt:hover {
+  border: 1px solid rgb(13, 92, 182);
+  background-color: rgb(229, 242, 255);
+}
+.bt-color a{
+  text-decoration: none;
+}
+.btn-dl{
+  padding: 10px 0;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.btn-dl:hover{
+  border: 1px solid rgb(13, 92, 182);
+  background-color: rgb(229, 242, 255);
+}
+.bt-active {
+  border: 1px solid rgb(13, 92, 182);
+  background-color: rgb(229, 242, 255);
+}
+.btn-disabled{
+  padding: 10px 0;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: rgb(242, 242, 242);
+  color: grey;
+}
+#button-addon1{
+  width: 40px; 
+  text-align: center;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+}

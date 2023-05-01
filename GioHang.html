@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiki - Giỏ hàng</title>
+    <!-- Logo -->
+    <link rel="icon" href="images/logo-tiki2.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icons/bootstrap-icons.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Tiki -->
+    <link rel="stylesheet" href="css/tiki.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>     
+</head>
+<body style="background-color: rgb(243, 242, 247);">
+    <div ng-app="myapp" ng-controller="myctrl">
+        <header style="background-color: rgb(26, 148, 255); color: white;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1">
+                        <a href="index.html"><img src="images/logo-tiki3.png" width="70%" alt="tiki-logo" style="margin-top: 8px;"></a>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="input-group" id="search">
+                            <input type="text" class="form-control" placeholder="Bạn tìm gì hôm nay"> 
+                            <button class="btn btn-primary" type="button"><span style="margin-right: 10px;"><i class="bi bi-search"></i></span>Tìm kiếm</button>
+                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-secondary" style="font-size: 14px;">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav e-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="DmDT1.html" style="color: white;">Điện thoại</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="DmDT1.html" style="color: white;">Đồng hồ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="DmDT1.html" style="color: white;">Balo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: white;">Iphone 14</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: white;">Iphone</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: white;">Laptop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: white;">Iphone 13</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: white;">Iphone 11</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="row">
+                            <div class="col-md-4 text-secondary">
+                                <a href="Login.html" class="menu-link">
+                                <div class="row">
+                                    <button class="bt-account" type="button" class="btn btn-secondary" style="background-color: rgb(26, 148, 255); color: white;">
+                                        <span style="font-size: 20px;"><i class="bi bi-emoji-wink" style="margin-right: 5px;"></i></span>Tài khoản
+                                    </button>  
+                                </div>  
+                                </a> 
+                            </div>
+                            <div class="col-md-1" style="font-size: 23px; color: gainsboro;">|</div>
+                            <div class="col-md-1">
+                                <button class="position-relative bt-cart" type="button" class="btn btn-primary" style="background-color: rgb(26, 148, 255);">
+                                    <img src="images/icon-cart2.png" width="70%">
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning" style="margin: 7px 5px 0 0;">{{tongSP}}</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h3 style="margin: 20px 0; text-align: center;">GIỎ HÀNG</h3>
+            <div class="container" ng-if="!cart.length>0" style="margin-top: 20px; background-color: white; height: 400px;">
+                <div class="row">
+                    <div class="img-cart" style="margin-top: 50px; text-align: center;">
+                        <img src="images/icon-cart3.png" style="width: 15%;">
+                    </div>
+                    <div class="content-cart" style="text-align: center; margin: 20px 0;">
+                        <p style="font-size: 15px;">Không có sản phẩm nào trong giỏ hàng của bạn.</p>
+                    </div>
+                    <div class="btn-cart" style="text-align: center;">
+                        <a href="index.html" style="text-decoration: none;">
+                            <button type="button" class="btn btn-warning"  style="width: 220px; font-size: 16px; padding: 5px;">Tiếp tục mua sắm</button>
+                        </a>
+                    </div>               
+                </div>
+            </div>
+            <div class="container" ng-if="cart.length>0" style="margin-top: 20px; background-color: white;">
+                <table class="table table-hover mb-2">
+                    <thead class="align-middle text-center text-primary">
+                        <th>SẢN PHẨM</th>
+                        <th>ĐƠN GIÁ</th>
+                        <th>SỐ LƯỢNG</th>
+                        <th>THÀNH TIỀN</th>
+                        <th></th>
+                    </thead>
+                    <tbody class="text-center align-middle">
+                        <tr ng-repeat="p in cart">
+                            <td style="width: 500px;"><img src="{{p.image}}" width="25%" style="margin-right: 5px;">{{p.name}}</td>
+                            <td><b style="font-size: 15px;">{{p.price | currency: "":"":"6.0"}} <u>đ</u></b></td>
+                            <td>
+                                <input type="number" ng-model="p.quantity" custom-on-change="handleQuantityChange" class="form-control text-center" placeholder="0" min="0" style="width: 80px; display:block; margin: 0 auto;">                               
+                            </td>
+                            <td><b style="font-size: 15px; color: red;">{{p.price*p.quantity | currency: "":"":"6.0"}} <u>đ</u></b</td>
+                            <td><a href="#" ng-click="remove(p.id)" style="text-decoration: none;"><i class="bi bi-trash3"></i></a></td>
+                        </tr>  
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="text-primary"><b style="font-size: 15px;">TỔNG TIỀN: {{ tongTien  | currency: "":"":"6.0"}} <u>đ</u></b></td>
+                            <td><a href="Dathang.html"><button class="btn btn-primary">Đặt hàng</button></a></td>
+                        </tr>                        
+                    </tbody>                 
+                </table>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 menu-footer" style="padding-left: 20px;">
+                        <h6>Hỗ trợ khách hàng</h6>
+                        <ul>
+                            <li>Hotline: <b><a href="tel:1900-6035" style="color:black;">1900-6035</a></b> <br>(1000 đ/phút, 8-21h kể cả T7, CN)</li>
+                            <li><a href="https://hotro.tiki.vn/s/">Các câu hỏi thường gặp</a></li>
+                            <li><a href="https://tiki.vn/lien-he/gui-yeu-cau">Gửi yêu cầu hỗ trợ</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/lam-the-nao-de-toi-dat-hang-qua-website-tiki">Hướng dẫn đặt hàng</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/cac-hinh-thuc-giao-hang-tai-tiki">Phương thức vận chuyển</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/chinh-sach-doi-tra-san-pham-tai-tiki-nhu-the-nao">Chính sách đổi trả</a></li>
+                            <li><a href="https://tiki.vn/khuyen-mai/huong-dan-tra-gop">Hướng dẫn trả góp</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/dich-vu-giao-hang-tu-nuoc-ngoai">Chính sách hàng nhập khẩu</a></li>
+                            <li>Hỗ trợ khách hàng: <a href="mailto:hotro@tiki.vn">hotro@tiki.vn</a></li>
+                            <li>Báo lỗi bảo mật: <a href="mailto:security@tiki.vn">security@tiki.vn</a></li>
+                        </ul>                       
+                    </div>
+                    <div class="col-md-3 menu-footer">
+                        <h6>Về Tiki</h6>
+                        <ul>
+                            <li><a href="https://tiki.vn/thong-tin/gioi-thieu-ve-tiki">Giới thiệu Tiki</a></li>
+                            <li><a href="https://blog.tiki.vn/">Tiki Blog</a></li>
+                            <li><a href="https://tuyendung.tiki.vn/">Tuyển dụng</a></li>
+                            <li><a href="https://tiki.vn/bao-mat-thanh-toan">Chính sách bảo mật thanh toán</a></li>
+                            <li><a href="https://tiki.vn/bao-mat-thong-tin-ca-nhan">Chính sách bảo mật thông tin cá nhân</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/chinh-sach-giai-quyet-khieu-nai">Chính sách giải quyết khiếu nại</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/dieu-khoan-su-dung">Điều khoản sử dụng</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/tiki-xu-la-gi">Giới thiệu Tiki Xu</a></li>
+                            <li><a href="https://tiki.vn/heo-vang-astra" class="small-text">Gửi Astra nhận Xu mua sắm thả ga</a></li>
+                            <li><a href="https://tiki.vn/khuyen-mai/tiki-tiep-thi-lien-ket">Tiếp thị liên kết cùng Tiki</a></li>
+                            <li><a href="https://tiki.vn/chuong-trinh/ban-hang-doanh-nghiep">Bán hàng doanh nghiệp</a></li>
+                            <li><a href="https://www.tikinow.biz/%C4%91i%E1%BB%81u-kho%E1%BA%A3n-v%E1%BA%ADn-chuy%E1%BB%83n">Điều kiện vận chuyển</a></li>
+                        </ul>                                
+                    </div>
+                    <div class="col-md-3 col-footer">
+                        <h6>Phương thức thanh toán</h6>
+                        <img src="images/img4.jpg">
+                        <h6>Dịch vụ giao hàng</h6>
+                        <a href="https://tikinow.biz?src=footer"><img src="images/img3.jpg"></a>
+                    </div>
+                    <div class="col-md-3 col-footer">
+                        <h6>Kết nối với chúng tôi</h6>
+                        <div class="icon">
+                            <a href="https://www.facebook.com/tiki.vn/" style="margin-right: 10px;"><img src="images/icon-facebook.png" width="15%"></a>
+                            <a href="https://www.youtube.com/user/TikiVBlog"><img src="images/icon-youtube.png" width="15%"></a>
+                            <a href="https://zalo.me/589673439383195103"><img src="images/icon-zalo.png" width="25%"></a>
+                        </div>
+                        <h6>Tải ứng dụng trên điện thoại</h6>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/qrcode.png" width="100%">
+                            </div>
+                            <div class="col-md-6 down-app">
+                                <a href="https://apps.apple.com/vn/app/id958100553"><img src="images/appstore.png" style="width: 70%; height: 40px;"></a>
+                                <a href="https://play.google.com/store/apps/details?id=vn.tiki.app.tikiandroid"><img src="images/playstore.png" style="width: 70%; height: 40px;"></a>
+                            </div>
+                        </div>    
+                    </div>
+                <hr>
+                    <ul style="list-style: none; color: grey; font-size: 12.5px; line-height: 25px;">
+                        <li>Trụ sở chính: Tòa nhà Viettel, Số 285, đường Cách Mạng Tháng 8, phường 12, quận 10, Thành phố Hồ Chí Minh</li>
+                        <li>Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng</li>
+                        <li>Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp lần đầu ngày 06/01/2010 và sửa đổi lần thứ 23 ngày 14/02/2022</li>
+                        <li>© 2022 - Bản quyền của Công ty TNHH Ti Ki</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>   
+    <script src="js/Cart.js"></script>
+    <script src="js/Main.js"></script>     
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiki - Điện thoại</title>
+    <!-- Logo -->
+    <link rel="icon" href="images/logo-tiki2.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icons/bootstrap-icons.css">
+    <script src="js/bootstrap.bundle.min.js"></script> 
+    <!-- Tiki -->
+    <link rel="stylesheet" href="css/tiki.css"> 
+    <!--AngularJS-->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>  
+</head>
+<body style="background-color: rgb(243, 242, 247);">
+    <div ng-app="myapp" ng-controller="myctrl">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <a href="index.html"><img src="images/logo-tiki.png" width="70%" alt="tiki-logo" style="margin-top: 8px;"></a>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="input-group" id="search">
+                            <input type="text" class="form-control" placeholder="Bạn tìm gì hôm nay" ng-model="keyword"> 
+                            <button ng-click="search()" class="btn btn-primary" type="button"><span style="margin-right: 10px;"><i class="bi bi-search"></i></span>Tìm kiếm</button>
+                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-secondary" style="font-size: 14px;">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav e-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="DmDT1.html" style="color: gray;">Điện thoại</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="DmDT1.html" style="color: gray;">Đồng hồ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="DmDT1.html" style="color: gray;">Balo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: gray;">Iphone 14</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: gray;">Iphone</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: gray;">Laptop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: gray;">Iphone 13</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: gray;">Iphone 11</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-sm-4 menu-item">
+                        <div class="row">
+                            <div class="col-md-4 text-primary"> 
+                                <a href="index.html" class="menu-link">
+                                <div class="row">
+                                    <button class="bt-home" type="button" class="btn btn-primary">
+                                        <span style="font-size: 20px;"><i class="bi bi-house-door-fill" style="margin-right: 5px;"></i></span>Trang chủ
+                                    </button>
+                                </div>     
+                                </a>                                                           
+                            </div>
+                            <div class="col-sm-4 text-secondary">
+                                <a href="Login.html" class="menu-link">
+                                <div class="row">
+                                    <button class="bt-account" type="button" class="btn btn-secondary">
+                                        <span style="font-size: 20px;"><i class="bi bi-emoji-wink" style="margin-right: 5px;"></i></span>Tài khoản
+                                    </button>  
+                                </div>  
+                                </a> 
+                            </div>
+                            <div class="col-sm-1" style="font-size: 23px; color: gainsboro;">|</div>
+                            <div class="col-sm-1">
+                                <a href="GioHang.html">
+                                    <button class="position-relative bt-cart" type="button" class="btn btn-primary">
+                                        <img src="images/icon-cart.png" width="70%">
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="margin: 7px 5px 0 0;">{{tongSP}}</span>
+                                    </button>
+                                </a>                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main style="margin-top: 20px;">
+            <div class="container">
+                <div class="row">
+                    <aside class="col-sm-2 item" style="margin-right: 20px; border-radius: 10px; background-color: white; height: 720px;">
+                        <div class="title-dmsp" style="margin-left: 5px;"><strong>Giá</strong></div>
+                        <p style="padding-left: 5px; color: grey; margin: 5px 0;">Chọn khoảng giá</p>
+                        <div class="row" style="margin: 5px 2px;">
+                            <input type="number" class="form-control" placeholder="0" style="width: 70px; margin: 5px; height: 30px;"> 
+                            _
+                            <input type="number" class="form-control" placeholder="0" style="width: 70px; margin: 5px; height: 30px;">
+                            <button type="button" class="btn btn-outline-primary" style="margin: 5px 0 10px 5px; width: 155px; height: 32px;">
+                                <p style="padding-bottom: 5px; font-size: 14px;">Áp dụng</p>
+                            </button>
+                        </div>
+                        <hr>
+                        <div class="title-dmsp" style="margin-left: 5px;"><strong>Dịch vụ</strong></div>
+                        <div class="form-check dmsp-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <img src="images/logo-now.png" width="20%" style="margin: 0 2px;">
+                            <label class="form-check-label" for="flexCheckDefault">Giao siêu tốc 2H</label>
+                        </div>
+                        <div class="form-check dmsp-check">
+                            <input class="form-check-input" type="checkbox" style="margin-top: 7px;">
+                            <img src="images/icon-freeship.png" width="50%">
+                            <label class="form-check-label" for="flexCheckDefault">Không giới hạn</label>
+                        </div>
+                        <div class="form-check dmsp-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Trả góp 0%</label>
+                        </div>
+                        <hr>
+                        <div class="title-dmsp" style="margin-left: 5px;"><strong>Đánh giá</strong></div>
+                        <div class="dg" style="margin: 5px 0 10px 8px; color: black;">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            từ 5 sao
+                        </div>
+                        <div class="dg" style="margin: 5px 0 10px 8px;">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-secondary"></i>
+                            từ 4 sao
+                        </div>     
+                        <div class="dg" style="margin: 5px 0 10px 8px;">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-secondary"></i>
+                            <i class="bi bi-star-fill text-secondary"></i>
+                            từ 3 sao
+                        </div>                        
+                        <hr>
+                        <div class="title-dmsp"><strong class="title-dmsp">Thương hiệu</strong></div>
+                        <div class="form-check dmsp-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Samsung</label>
+                        </div>
+                        <div class="form-check dmsp-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Xiaomi</label>
+                        </div>
+                        <div class="form-check dmsp-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Apple</label>
+                        </div>
+                        <div class="form-check dmsp-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Nokia</label>
+                        </div>
+                        <div class="form-check dmsp-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Realme</label>
+                        </div>
+                        <hr>
+                        <div class="title-dmsp"><strong class="title-dmsp">Màu sắc</strong></div>
+                        <div class="form-check dmsp-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Nhiều màu</label>
+                        </div>
+                    </aside>
+                    <article class="col-sm-9">
+                        <div class="row col-sm-12">
+                            <div class="col-sm-6" style="height: 220px;">
+                                <img src="images/banner-dmsp.webp" style="width: 100%; height: 215px; margin: 5px 0; border-radius: 10px;">
+                            </div>
+                            <div class="col-sm-6" style="height: 220px;">
+                                <img src="images/banner-dmsp1.webp" style="width: 100%; height: 215px; margin: 5px 0 5px 12px; border-radius: 10px;">
+                            </div>      
+                        </div>                       
+                        <!--Sản phẩm-->
+                        <div class="container" ng-include="'Module/Product.html'"></div>
+                        <!--/Sản phẩm-->
+                        <div style="margin: 50px 10px 10px 30px;">
+                            <ul class="pagination pagination-lg justify-content-center">
+                              <li class="page-item">
+                                <a class="page-link" href="DmDT2.html" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="DmDT1.html">1</a></li>
+                              <li class="page-item"><a class="page-link" href="DmDT2.html">2</a></li>
+                              <li class="page-item active"><a class="page-link" href="DmDT3.html">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link disabled" href="#" aria-label="Next">
+                                  <span aria-hidden="false">&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </article>
+                    <!--Pop up-->
+                    <button type="button" class="btn btn-primary text-light btn-contact" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <i class="bi bi-chat-square-text mx-auto"></i>
+                    </button>
+                    <div class="modal fade" id="myModal" ng-include="'Module/PopUp.html'"></div>
+                    <!--/Pop up-->
+                    <!-- toast -->
+                    <div class="position-fixed bottom-0 start-10 translate-middle-x" style="z-index: 11; opacity: 1">
+                        <div id="themSanPhamThanhCong" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="d-flex align-items-center text-success justify-content-center px-2 py-2 rounded-1">
+                                <i class="bi bi-check-circle me-2 fs-3"></i>
+                                <span class="fw-semibold">Thêm sản phẩm thành công</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/toast -->
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 menu-footer" style="padding-left: 20px;">
+                        <h6>Hỗ trợ khách hàng</h6>
+                        <ul>
+                            <li>Hotline: <b><a href="tel:1900-6035" style="color:black;">1900-6035</a></b> <br>(1000 đ/phút, 8-21h kể cả T7, CN)</li>
+                            <li><a href="https://hotro.tiki.vn/s/">Các câu hỏi thường gặp</a></li>
+                            <li><a href="https://tiki.vn/lien-he/gui-yeu-cau">Gửi yêu cầu hỗ trợ</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/lam-the-nao-de-toi-dat-hang-qua-website-tiki">Hướng dẫn đặt hàng</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/cac-hinh-thuc-giao-hang-tai-tiki">Phương thức vận chuyển</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/chinh-sach-doi-tra-san-pham-tai-tiki-nhu-the-nao">Chính sách đổi trả</a></li>
+                            <li><a href="https://tiki.vn/khuyen-mai/huong-dan-tra-gop">Hướng dẫn trả góp</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/dich-vu-giao-hang-tu-nuoc-ngoai">Chính sách hàng nhập khẩu</a></li>
+                            <li>Hỗ trợ khách hàng: <a href="mailto:hotro@tiki.vn">hotro@tiki.vn</a></li>
+                            <li>Báo lỗi bảo mật: <a href="mailto:security@tiki.vn">security@tiki.vn</a></li>
+                        </ul>                       
+                    </div>
+                    <div class="col-md-3 menu-footer">
+                        <h6>Về Tiki</h6>
+                        <ul>
+                            <li><a href="https://tiki.vn/thong-tin/gioi-thieu-ve-tiki">Giới thiệu Tiki</a></li>
+                            <li><a href="https://blog.tiki.vn/">Tiki Blog</a></li>
+                            <li><a href="https://tuyendung.tiki.vn/">Tuyển dụng</a></li>
+                            <li><a href="https://tiki.vn/bao-mat-thanh-toan">Chính sách bảo mật thanh toán</a></li>
+                            <li><a href="https://tiki.vn/bao-mat-thong-tin-ca-nhan">Chính sách bảo mật thông tin cá nhân</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/chinh-sach-giai-quyet-khieu-nai">Chính sách giải quyết khiếu nại</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/dieu-khoan-su-dung">Điều khoản sử dụng</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/tiki-xu-la-gi">Giới thiệu Tiki Xu</a></li>
+                            <li><a href="https://tiki.vn/heo-vang-astra" class="small-text">Gửi Astra nhận Xu mua sắm thả ga</a></li>
+                            <li><a href="https://tiki.vn/khuyen-mai/tiki-tiep-thi-lien-ket">Tiếp thị liên kết cùng Tiki</a></li>
+                            <li><a href="https://tiki.vn/chuong-trinh/ban-hang-doanh-nghiep">Bán hàng doanh nghiệp</a></li>
+                            <li><a href="https://www.tikinow.biz/%C4%91i%E1%BB%81u-kho%E1%BA%A3n-v%E1%BA%ADn-chuy%E1%BB%83n">Điều kiện vận chuyển</a></li>
+                        </ul>                                
+                    </div>
+                    <div class="col-md-3 col-footer">
+                        <h6>Phương thức thanh toán</h6>
+                        <img src="images/img4.jpg">
+                        <h6>Dịch vụ giao hàng</h6>
+                        <a href="https://tikinow.biz?src=footer"><img src="images/img3.jpg"></a>
+                    </div>
+                    <div class="col-md-3 col-footer">
+                        <h6>Kết nối với chúng tôi</h6>
+                        <div class="icon">
+                            <a href="https://www.facebook.com/tiki.vn/" style="margin-right: 10px;"><img src="images/icon-facebook.png" width="15%"></a>
+                            <a href="https://www.youtube.com/user/TikiVBlog"><img src="images/icon-youtube.png" width="15%"></a>
+                            <a href="https://zalo.me/589673439383195103"><img src="images/icon-zalo.png" width="25%"></a>
+                        </div>
+                        <h6>Tải ứng dụng trên điện thoại</h6>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/qrcode.png" width="100%">
+                            </div>
+                            <div class="col-md-6 down-app">
+                                <a href="https://apps.apple.com/vn/app/id958100553"><img src="images/appstore.png" style="width: 70%; height: 40px;"></a>
+                                <a href="https://play.google.com/store/apps/details?id=vn.tiki.app.tikiandroid"><img src="images/playstore.png" style="width: 70%; height: 40px;"></a>
+                            </div>
+                        </div>    
+                    </div>
+                <hr>
+                    <ul style="list-style: none; color: grey; font-size: 12.5px; line-height: 25px;">
+                        <li>Trụ sở chính: Tòa nhà Viettel, Số 285, đường Cách Mạng Tháng 8, phường 12, quận 10, Thành phố Hồ Chí Minh</li>
+                        <li>Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng</li>
+                        <li>Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp lần đầu ngày 06/01/2010 và sửa đổi lần thứ 23 ngày 14/02/2022</li>
+                        <li>© 2022 - Bản quyền của Công ty TNHH Ti Ki</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/Cart.js"></script>
+    <script src="js/Main.js"></script>
+</body>
+</html>

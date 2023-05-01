@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiki - Iphone 14 Pro Max</title>
+    <!-- Logo -->
+    <link rel="icon" href="images/logo-tiki2.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icons/bootstrap-icons.css">
+    <!-- Tiki -->
+    <link rel="stylesheet" href="css/tiki.css">   
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>    
+</head>
+<body style="background-color: rgb(229, 227, 233);">
+    <div ng-app="myapp" ng-controller="myctrl">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1">
+                        <a href="index.html"><img src="images/logo-tiki.png" width="70%" alt="tiki-logo" style="margin-top: 8px;"></a>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="input-group" id="search">
+                            <input type="text" class="form-control" placeholder="Bạn tìm gì hôm nay"> 
+                            <button class="btn btn-primary" type="button"><span style="margin-right: 10px;"><i class="bi bi-search"></i></span>Tìm kiếm</button>
+                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-secondary" style="font-size: 14px;">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav e-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="DmDT1.html" style="color: gray;">Điện thoại</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="DmDT1.html" style="color: gray;">Đồng hồ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="DmDT1.html" style="color: gray;">Balo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: gray;">Iphone 14</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: gray;">Iphone</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: gray;">Laptop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: gray;">Iphone 13</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: gray;">Iphone 11</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <div class="row">
+                            <div class="col-md-4 text-primary"> 
+                                <a href="index.html" class="menu-link">
+                                <div class="row">
+                                    <button class="bt-home" type="button" class="btn btn-primary">
+                                        <span style="font-size: 20px;"><i class="bi bi-house-door-fill" style="margin-right: 5px;"></i></span>Trang chủ
+                                    </button>
+                                </div>     
+                                </a>                                                           
+                            </div>
+                            <div class="col-md-4 text-secondary">
+                                <a href="Login.html" class="menu-link">
+                                <div class="row">
+                                    <button class="bt-account" type="button" class="btn btn-secondary">
+                                        <span style="font-size: 20px;"><i class="bi bi-emoji-wink" style="margin-right: 5px;"></i></span>Tài khoản
+                                    </button>  
+                                </div>  
+                                </a> 
+                            </div>
+                            <div class="col-md-1" style="font-size: 23px; color: gainsboro;">|</div>
+                            <div class="col-md-1">
+                                <a href="GioHang.html">
+                                    <button class="position-relative bt-cart" type="button" class="btn btn-primary">
+                                        <img src="images/icon-cart.png" width="70%">
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="margin: 7px 5px 0 0;">{{tongSP}}</span>
+                                    </button>
+                                </a>                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main style="margin-top: 20px;">
+            <div class="container" style="background-color: white; border-radius: 10px;">
+                <div class="row">
+                        <div class="col-md-5 img-dt">
+                            <!--Carousel-->
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/ip-14prmB2.jpg" class="d-block">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/ip-14prmB.jpg" class="d-block">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/ip-14prm4.jpg" class="d-block">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/ip-14prm1.jpg" class="d-block">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/ip-14prmB1.jpg" class="d-block">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                            <!--/Carousel-->
+                        </div>
+                        <div class="col-md-7 content-dt">
+                            <div class="content">
+                                <p style="margin-bottom: 0px;">Thương hiệu: <a href="" style="text-decoration: none;">Appple</a></p>
+                                <span style="font-size: 24px;">Apple iPhone 14 Pro Max</span>
+                                <div class="icon" style="margin: 10px 0 10px 0; color: grey;">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    | Đã bán 1823
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <div class="content-main">
+                                        <div class="price" style="margin: 10px 10px;">
+                                            <h2 style="color: red;">29.9990.000 <u>đ</u></h2>
+                                        </div>
+                                        <div class="color" style="padding: 5px 10px;">
+                                            <p style="color: grey">Màu:<b style="color: black;"> Bạc</b></p>
+                                            <div class="bt-color">
+                                                <a href="ChitietSP2.html"><button type="button" class="cl-bt bt-active">
+                                                    <img src="images/icon-IPB.webp" style="width: 45%; float: left; margin: 5px 0px;">
+                                                    <p style="font-size: 15px; margin-top: 20px; text-align: center;">Bạc</p>
+                                                </button>
+                                                </a>
+                                                <a href="ChitietSP3.html"><button type="button" class="cl-bt">
+                                                    <img src="images/icon-IPT.webp" style="width: 45%; float: left; margin: 5px 0px;">
+                                                    <p style="font-size: 15px; margin-top: 20px; text-align: center;">Tím</p>
+                                                </button>
+                                                </a>
+                                                <a href="ChitietSP.html"><button type="button" class="cl-bt">
+                                                    <img src="images/icon-IPV.webp" style="width: 45%; float: left; margin: 5px 0px;">
+                                                    <p style="font-size: 15px; margin-top: 20px; text-align: center;">Vàng</p>
+                                                </button>
+                                                </a>
+                                                <a href="ChitietSP4.html"><button type="button" class="cl-bt">
+                                                    <img src="images/icon-IPD.webp" style="width: 45%; float: left; margin: 5px 0px;">
+                                                    <p style="font-size: 15px; margin-top: 20px; text-align: center;">Đen</p>
+                                                </button>
+                                                </a>
+                                            </div>                                                                          
+                                        </div>
+                                        <div class="dungluong" style="padding: 10px 0 5px 10px;">
+                                            <p style="color: grey">Dung lượng:<b style="color: black;"> 128GB</b></p>
+                                            <div class="bt-dl">
+                                                <button type="button" class="btn-dl bt-active">
+                                                    <p style="font-size: 14px; text-align: center;">128GB</p>
+                                                </button>
+                                                <button type="button" class="btn-disabled">
+                                                    <p style="font-size: 14px; text-align: center;">256GB</p>
+                                                </button>
+                                                <button type="button" class="btn-disabled">
+                                                    <p style="font-size: 14px; text-align: center;">1TB</p>
+                                                </button>
+                                            </div>                                                                          
+                                        </div>
+                                        <hr style="margin: 20px 0;">
+                                        <div class="dungluong" style="padding: 10px 0 5px 10px;">
+                                            <p style="margin-top: 0px; font-size: 16px;">Số lượng</p>
+                                            <div class="input-group mb-3" style="width: 120px; height: 20px;">
+                                                <button class="btn btn-outline-secondary" type="button" id="button-addon1"><i class="bi bi-dash-lg"></i></button>
+                                                <input type="text" class="form-control" placeholder="1" style="text-align: center;">
+                                                <button class="btn btn-outline-secondary" type="button" id="button-addon1"><i class="bi bi-plus-lg"></i></button>
+                                            </div>                                                                        
+                                        </div>
+                                        <button type="button" class="btn btn-danger" style="margin: 30px 0 0 10px; width: 250px; font-size: 20px; padding: 10px;">Chọn mua</button> 
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card" style="width: 240px; margin-left: 20px;">
+                                        <div class="head-card" style="margin-bottom: 10px;">
+                                            <img src="images/logo-tiki4.png" class="img-card">
+                                            <span style="font-weight: bold;">Tiki Trading</span>                                     
+                                        </div>
+                                        <div class="content-card">
+                                            <div class="dg-ct">
+                                                <div class="row" style="margin-bottom: 10px;">
+                                                    <div class="col-md-6" style="text-align: center; border-right: 1px solid gainsboro;">
+                                                        <span style="font-weight: bold; font-size: 17px;">4.7 / 5 <i class="bi bi-star-fill text-warning"></i></span>
+                                                        <p style="color: grey;">5.2tr+</p>
+                                                        
+                                                    </div>
+                                                    <div class="col-md-6" style="text-align: center;">
+                                                        <span style="font-weight: bold; font-size: 17px;">459.7k+</span>
+                                                        <p style="color: grey;">Theo dõi</p>
+                                                    </div>
+                                                </div>
+                                                <div class="bt-card">
+                                                    <div class="row">
+                                                        <div class="col-md-6" style="text-align: center;">
+                                                            <button type="button" class="btn btn-outline-primary bt-shop"><span style="font-size: 18px;"><i class="bi bi-shop" style="margin-right: 5px;"></i></span>Xem shop</button>
+                                                        </div>
+                                                        <div class="col-md-6" style="text-align: center;">
+                                                            <button type="button" class="btn btn-outline-primary bt-shop"><span style="font-size: 18px;"><i class="bi bi-plus-circle" style="margin-right: 5px;"></i></span>Theo dõi</button>
+                                                        </div>
+                                                    </div>                                            
+                                                </div>
+                                                <hr>
+                                                <div class="ct-content">
+                                                    <p>Thời gian bảo hành <span>12 tháng</span></p>
+                                                    <p>Hình thức bảo hành <span>Hóa đơn</span></p>
+                                                    <p>Nơi bảo hành <span>Bảo hành chính hãng</span></p>
+                                                    <p>Hướng dẫn bảo hành <span><a href="https://hotro.tiki.vn/s/article/chinh-sach-bao-hanh-tai-tiki-nhu-the-nao">Xem chi tiết</a></span></p>
+                                                </div>
+                                                <hr>
+                                                <img class="img-fluid" src="images/logo-bh.jpg" style="margin-bottom: 5px; height: 60%;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 menu-footer" style="padding-left: 20px;">
+                        <h6>Hỗ trợ khách hàng</h6>
+                        <ul>
+                            <li>Hotline: <b><a href="tel:1900-6035" style="color:black;">1900-6035</a></b> <br>(1000 đ/phút, 8-21h kể cả T7, CN)</li>
+                            <li><a href="https://hotro.tiki.vn/s/">Các câu hỏi thường gặp</a></li>
+                            <li><a href="https://tiki.vn/lien-he/gui-yeu-cau">Gửi yêu cầu hỗ trợ</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/lam-the-nao-de-toi-dat-hang-qua-website-tiki">Hướng dẫn đặt hàng</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/cac-hinh-thuc-giao-hang-tai-tiki">Phương thức vận chuyển</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/chinh-sach-doi-tra-san-pham-tai-tiki-nhu-the-nao">Chính sách đổi trả</a></li>
+                            <li><a href="https://tiki.vn/khuyen-mai/huong-dan-tra-gop">Hướng dẫn trả góp</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/dich-vu-giao-hang-tu-nuoc-ngoai">Chính sách hàng nhập khẩu</a></li>
+                            <li>Hỗ trợ khách hàng: <a href="mailto:hotro@tiki.vn">hotro@tiki.vn</a></li>
+                            <li>Báo lỗi bảo mật: <a href="mailto:security@tiki.vn">security@tiki.vn</a></li>
+                        </ul>                       
+                    </div>
+                    <div class="col-md-3 menu-footer">
+                        <h6>Về Tiki</h6>
+                        <ul>
+                            <li><a href="https://tiki.vn/thong-tin/gioi-thieu-ve-tiki">Giới thiệu Tiki</a></li>
+                            <li><a href="https://blog.tiki.vn/">Tiki Blog</a></li>
+                            <li><a href="https://tuyendung.tiki.vn/">Tuyển dụng</a></li>
+                            <li><a href="https://tiki.vn/bao-mat-thanh-toan">Chính sách bảo mật thanh toán</a></li>
+                            <li><a href="https://tiki.vn/bao-mat-thong-tin-ca-nhan">Chính sách bảo mật thông tin cá nhân</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/chinh-sach-giai-quyet-khieu-nai">Chính sách giải quyết khiếu nại</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/dieu-khoan-su-dung">Điều khoản sử dụng</a></li>
+                            <li><a href="https://hotro.tiki.vn/s/article/tiki-xu-la-gi">Giới thiệu Tiki Xu</a></li>
+                            <li><a href="https://tiki.vn/heo-vang-astra" class="small-text">Gửi Astra nhận Xu mua sắm thả ga</a></li>
+                            <li><a href="https://tiki.vn/khuyen-mai/tiki-tiep-thi-lien-ket">Tiếp thị liên kết cùng Tiki</a></li>
+                            <li><a href="https://tiki.vn/chuong-trinh/ban-hang-doanh-nghiep">Bán hàng doanh nghiệp</a></li>
+                            <li><a href="https://www.tikinow.biz/%C4%91i%E1%BB%81u-kho%E1%BA%A3n-v%E1%BA%ADn-chuy%E1%BB%83n">Điều kiện vận chuyển</a></li>
+                        </ul>                                
+                    </div>
+                    <div class="col-md-3 col-footer">
+                        <h6>Phương thức thanh toán</h6>
+                        <img src="images/img4.jpg">
+                        <h6>Dịch vụ giao hàng</h6>
+                        <a href="https://tikinow.biz?src=footer"><img src="images/img3.jpg"></a>
+                    </div>
+                    <div class="col-md-3 col-footer">
+                        <h6>Kết nối với chúng tôi</h6>
+                        <div class="icon">
+                            <a href="https://www.facebook.com/tiki.vn/" style="margin-right: 10px;"><img src="images/icon-facebook.png" width="15%"></a>
+                            <a href="https://www.youtube.com/user/TikiVBlog"><img src="images/icon-youtube.png" width="15%"></a>
+                            <a href="https://zalo.me/589673439383195103"><img src="images/icon-zalo.png" width="25%"></a>
+                        </div>
+                        <h6>Tải ứng dụng trên điện thoại</h6>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/qrcode.png" width="100%">
+                            </div>
+                            <div class="col-md-6 down-app">
+                                <a href="https://apps.apple.com/vn/app/id958100553"><img src="images/appstore.png" style="width: 70%; height: 40px;"></a>
+                                <a href="https://play.google.com/store/apps/details?id=vn.tiki.app.tikiandroid"><img src="images/playstore.png" style="width: 70%; height: 40px;"></a>
+                            </div>
+                        </div>    
+                    </div>
+                <hr>
+                    <ul style="list-style: none; color: grey; font-size: 12.5px; line-height: 25px;">
+                        <li>Trụ sở chính: Tòa nhà Viettel, Số 285, đường Cách Mạng Tháng 8, phường 12, quận 10, Thành phố Hồ Chí Minh</li>
+                        <li>Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng</li>
+                        <li>Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp lần đầu ngày 06/01/2010 và sửa đổi lần thứ 23 ngày 14/02/2022</li>
+                        <li>© 2022 - Bản quyền của Công ty TNHH Ti Ki</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- jQuery -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Cart.js"></script>
+    <script src="js/Main.js"></script>             
+</body>
+</html>

@@ -1,0 +1,291 @@
+[
+    {
+      "id": 1,
+      "image": "images/dt-iphone3.webp",
+      "brand": "Apple",
+      "name": "IPhone 14 Pro Max",
+      "price": 29990000,
+      "start": 5,
+      "buy": "1802",
+      "service1": "Freeship+",
+      "service2": "Trả góp"
+    },
+    {
+      "id": 2,
+      "image": "images/dt-iphone1.webp",
+      "brand": "Apple",
+      "name": "Apple IPhone 11",
+      "price": 10750000,
+      "start": 4.8,
+      "buy": "5000+",
+      "service1": "Freeship+",
+      "service2": "Trả góp"
+    },
+    {
+      "id": 3,
+      "image": "images/dt-iphone2.webp",
+      "brand": "Apple",
+      "name": "Apple iPhone 14 Pro",
+      "price": 27490000,
+      "start": 5,
+      "buy": "737",
+      "service1": "Freeship+",
+      "service2": "Trả góp"
+    },
+    {
+      "id": 4,
+      "image": "images/dt-iphone4.webp",
+      "brand": "Apple",
+      "name": "Apple iPhone 13",
+      "price": 18290000,
+      "start": 5,
+      "buy": "4955",
+      "service1": "Freeship+",
+      "service2": "Trả góp"
+    },
+    {
+      "id": 5,
+      "image": "images/dt-iphone5.webp",
+      "brand": "Apple",
+      "name": "Apple iPhone 14",
+      "price": 20990000,
+      "start": 5,
+      "buy": "382",
+      "service1": "Freeship+",
+      "service2": "Trả góp"
+    },
+  
+    {
+      "id": 6,
+      "image": "images/dt-samsung1.webp",
+      "brand": "Samsung",
+      "name": "Samsung Galaxy Z Flip4",
+      "price": 14990000,
+      "start": 5,
+      "buy": "249",
+      "service1": "Freeship+",
+      "service2": "Trả góp"
+    },
+    {
+      "id": 7,
+      "image": "images/dt-samsung2.webp",
+      "brand": "Samsung",
+      "name": "Samsung Galaxy S22",
+      "price": 22990000,
+      "start": 4.5,
+      "buy": "51",
+      "service1": "Freeship+",
+      "service2": "Trả góp"
+    },
+    {
+      "id": 8,
+      "image": "images/dt-samsung3.webp",
+      "brand": "Samsung",
+      "name": "Samsung Galaxy A53",
+      "price": 7990000,
+      "start": 5,
+      "buy": "83",
+      "service1": "Freeship+",
+      "service2": "Trả góp"
+    },
+    {
+      "id": 9,
+      "image": "images/dt-samsung4.webp",
+      "brand": "Samsung",
+      "name": "Samsung Galaxy A23",
+      "price": 4990000,
+      "start": 5,
+      "buy": "3214",
+      "service1": "Freeship+",
+      "service2": "Trả góp"
+    },
+    {
+      "id": 10,
+      "image": "images/dt-samsung5.webp",
+      "brand": "Samsung",
+      "name": "Samsung Galaxy S22",
+      "price": 22990000,
+      "start": 4.5,
+      "buy": "324",
+      "service1": "Freeship+",
+      "service2": "Trả góp"
+    },
+  
+    {
+      "id": 11,
+      "image": "images/dt-xiaomi1.webp",
+      "brand": "Xiaomi",
+      "name": "Xiaomi Redmi Note 10S",
+      "price": 4650000,
+      "start": 4.7,
+      "buy": "529",
+      "service1": "Freeship+",
+      "service2": "Trả góp"
+    },
+    {
+      "id": 12,
+      "image": "images/dt-xiaomi2.webp",
+      "brand": "Xiaomi",
+      "name": "XIAOMI POCO X4 GT",
+      "price": 8490000,
+      "start": 5,
+      "buy": "35",
+      "service1": "Freeship+",
+      "service2": "Trả góp"
+    },
+    {
+      "id": 13,
+      "image": "images/dt-xiaomi3.webp",
+      "brand": "Xiaomi",
+      "name": "Xiaomi Redmi Note 11",
+      "price": 4090000,
+      "start": 4.8,
+      "buy": "713",
+      "service1": "Freeship+",
+      "service2": "Nhiều màu",
+      "color": "Nhiều màu"
+    },
+    {
+      "id": 14,
+      "image": "images/dt-xiaomi4.webp",
+      "brand": "Xiaomi",
+      "name": "Xiaomi Redmi Note 10",
+      "price": 3559000,
+      "start": 4.9,
+      "buy": "108",
+      "service1": "Freeship+",
+      "service2": "Nhiều màu",
+      "color": "Nhiều màu"
+    },
+    {
+      "id": 15,
+      "image": "images/dt-xiaomi5.webp",
+      "brand": "Xiaomi",
+      "name": "Xiaomi Poco F3",
+      "price": 9990000,
+      "start": 4.6,
+      "buy": "108",
+      "service1": "Freeship+",
+      "service2": "Nhiều màu",
+      "color": "Nhiều màu"
+    },
+  
+    {
+      "id": 16,
+      "image": "images/dt-nokia1.webp",
+      "brand": "Nokia",
+      "name": "Nokia 105 Single Sim",
+      "price": 549000,
+      "start": 4.5,
+      "buy": "168",
+      "service1": "Freeship+",
+      "service2": "Nhiều màu",
+      "color": "Nhiều màu"
+    },
+    {
+      "id": 17,
+      "image": "images/dt-nokia2.webp",
+      "brand": "Nokia",
+      "name": "Nokia C30 (2GB/32GB)",
+      "price": 1769000,
+      "start": 4.3,
+      "buy": "62",
+      "service1": "Freeship+",
+      "service2": "Nhiều màu",
+      "color": "Nhiều màu"
+    },
+    {
+      "id": 18,
+      "image": "images/dt-nokia3.webp",
+      "brand": "Nokia",
+      "name": "Nokia 110 4G",
+      "price": 790000,
+      "start": 5,
+      "buy": "162",
+      "service1": "Freeship+",
+      "service2": "Nhiều màu",
+      "color": "Nhiều màu"
+    },
+    {
+      "id": 19,
+      "image": "images/dt-nokia4.webp",
+      "brand": "Nokia",
+      "name": "Nokia C20 (2GB/32GB)",
+      "price": 1769000,
+      "start": 4.6,
+      "buy": "18",
+      "service1": "Freeship+",
+      "service2": "Nhiều màu",
+      "color": "Nhiều màu"
+    },
+    {
+      "id": 20,
+      "image": "images/dt-nokia5.webp",
+      "brand": "Nokia",
+      "name": "Nokia C20 (2GB/16GB)",
+      "price": 1590000,
+      "start": 4.7,
+      "buy": "521",
+      "service1": "Freeship+",
+      "service2": "Nhiều màu",
+      "color": "Nhiều màu"
+    },
+  
+    {
+      "id": 21,
+      "image": "images/dt-realme1.webp",
+      "brand": "Realme",
+      "name": "Realme C11 (4GB/64GB)",
+      "price": 3479000,
+      "start": 4,
+      "buy": "19",
+      "service1": "Freeship+",
+      "service2": "Trả góp"
+    },
+    {
+      "id": 22,
+      "image": "images/dt-realme2.webp",
+      "brand": "Realme",
+      "name": "Realme C11 (4GB/64GB)",
+      "price": 2459000,
+      "start": 3,
+      "buy": "4",
+      "service1": "Freeship+",
+      "service2": "Trả góp"
+    },
+    {
+      "id": 23,
+      "image": "images/dt-realme3.webp",
+      "brand": "Realme",
+      "name": "Realme C33 (3GB/32GB)",
+      "price": 2890000,
+      "start": 4,
+      "buy": "9",
+      "service1": "Freeship+",
+      "service2": "Nhiều màu",
+      "color": "Nhiều màu"
+    },
+    {
+      "id": 24,
+      "image": "images/dt-realme4.webp",
+      "brand": "Realme",
+      "name": "Realme C25 (4GB/64GB)",
+      "price": 3529000,
+      "start": 4.5,
+      "buy": "5",
+      "service1": "Freeship+",
+      "service2": "Trả góp"
+    },
+    {
+      "id": 25,
+      "image": "images/dt-realme5.webp",
+      "brand": "Realme",
+      "name": "Realme C35 (4GB/64GB)",
+      "price": 3689000,
+      "start": 4.7,
+      "buy": "10",
+      "service1": "Freeship+",
+      "service2": "Trả góp"
+    }
+  ]
+  

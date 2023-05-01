@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiki - Mua hàng onlie giá tốt</title>
+    <!-- Logo -->
+    <link rel="icon" href="images/logo-tiki2.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icons/bootstrap-icons.css">
+    <script src="js/bootstrap.bundle.min.js"></script> 
+    <!-- Tiki -->
+    <link rel="stylesheet" href="css/tiki.css"> 
+    <!--AngularJS-->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>  
+</head>
+<body style="background-color: rgb(243, 242, 247);">
+    <div ng-app="myapp" ng-controller="myctrl"> 
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <a href="index.html"><img src="images/logo-tiki.png" width="70%" alt="tiki-logo" style="margin-top: 8px;"></a>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="input-group" id="search">
+                            <input type="text" class="form-control" placeholder="Bạn tìm gì hôm nay" ng-model="keyword"> 
+                            <button ng-click="search()" class="btn btn-primary" type="button"><span style="margin-right: 10px;"><i class="bi bi-search"></i></span>Tìm kiếm</button>
+                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-secondary" style="font-size: 14px;">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav e-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="DmDT1.html" style="color: gray;">Điện thoại</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="DmDT1.html" style="color: gray;">Đồng hồ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="DmDT1.html" style="color: gray;">Balo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: gray;">Iphone 14</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: gray;">Iphone</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: gray;">Laptop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: gray;">Iphone 13</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="DmDT1.html" style="color: gray;">Iphone 11</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-sm-4 menu-item">
+                        <div class="row">
+                            <div class="col-md-4 text-primary"> 
+                                <a href="index.html" class="menu-link">
+                                <div class="row">
+                                    <button class="bt-home" type="button" class="btn btn-primary">
+                                        <span style="font-size: 20px;"><i class="bi bi-house-door-fill" style="margin-right: 5px;"></i></span>Trang chủ
+                                    </button>
+                                </div>     
+                                </a>                                                           
+                            </div>
+                            <div class="col-sm-4 text-secondary">
+                                <a href="Login.html" class="menu-link">
+                                <div class="row">
+                                    <button class="bt-account" type="button" class="btn btn-secondary">
+                                        <span style="font-size: 20px;"><i class="bi bi-emoji-wink" style="margin-right: 5px;"></i></span>Tài khoản
+                                    </button>  
+                                </div>  
+                                </a> 
+                            </div>
+                            <div class="col-sm-1" style="font-size: 23px; color: gainsboro;">|</div>
+                            <div class="col-sm-1">
+                                <a href="GioHang.html">
+                                    <button class="position-relative bt-cart" type="button" class="btn btn-primary">
+                                        <img src="images/icon-cart.png" width="70%">
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="margin: 7px 5px 0 0;">{{tongSP}}</span>
+                                    </button>
+                                </a>                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main style="margin-top: 15px;">
+            <div class="container">
+                <div class="row">
+                    <aside class="col-md-2 item" 
+                    style="height: 450px; margin: 8px 20px 0 0; border-radius: 10px; background-color: white;" 
+                    ng-include="'Module/Danhmuc.html'">
+                    </aside>
+                    <article class="col-md-9">
+                        <div class="row" style="margin-bottom: 10px" ng-include="'Module/Carousel.html'"></div>
+                        <div style="margin-bottom: 50px" ng-include="'Module/Product.html'"></div>
+                        <div class="row" style="background-color: white;" ng-include="'Module/Footer.html'">
+                        </div>
+                    </article>
+                    <!--Pop up-->
+                    <button type="button" class="btn btn-primary text-light btn-contact" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <i class="bi bi-chat-square-text mx-auto"></i>
+                    </button>
+                    <div class="modal fade" id="myModal" ng-include="'Module/PopUp.html'"></div>
+                    <!--/Pop up-->
+                    <!-- toast -->
+                    <div class="position-fixed bottom-0 start-50 translate-middle-x" style="z-index: 11; opacity: 1">
+                        <div id="themSanPhamThanhCong" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="d-flex align-items-center text-success justify-content-center px-2 py-2 rounded-1">
+                                <i class="bi bi-check-circle me-2 fs-3"></i>
+                                <span class="fw-semibold">Thêm sản phẩm thành công</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/toast -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/Cart.js"></script>
+    <script src="js/Main.js"></script>
+</body>
+</html>
